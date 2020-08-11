@@ -143,7 +143,7 @@ export const Button = styled.a<Partial<Props>>`
         switch(color) {
             case 'primary':
                 return css`
-                    background-color: var(--color-primary-dark)
+                    background-color: var(--color-primary-darker)
                 `;
             case 'secundary':
                 return css`

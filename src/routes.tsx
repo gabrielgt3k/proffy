@@ -8,7 +8,7 @@ const Routes: React.FC = () => {
   return (
       <Switch>
         <Route path="/" exact component={LandingPage} />
-        <Route path="/study" exact component={TeacherList} />
+        <Route path="/study" exact render={() => <TeacherList />}  />
         <Route path="/give-classes" exact component={TeacherForm} />
       </Switch>
   )

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
     width: 100vw;
@@ -43,12 +43,12 @@ export const Fieldset = styled.fieldset`
             background: none;
             border: none;
             cursor: pointer;
-            color: var(--color-primary);
+            color: ${props => props.theme.title === 'light' ? css`var(--color-primary)` : '#FFF'};
             font: 700 1.6rem Archivo;
             transition: color 0.3s;
             outline: none;
             &:hover {
-                color: var(--color-primary-dark);
+                color: ${props => props.theme.title === 'light' ? css`var(--color-primary-dark)` : css`var(--color-text-base)`};
             }
         }
     }

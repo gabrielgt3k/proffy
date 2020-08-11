@@ -51,8 +51,8 @@ export const Input = styled.input`
     outline: none;
     border: 1px solid var(--color-line-in-white);
     padding: 0 1.6rem;
+    color: '#FFFFFF';
     font: 1.6rem Archivo;
-
     & + textarea {
         margin-top: 2.4rem;
     }
@@ -68,6 +68,11 @@ export const Select = styled.select`
     border: 1px solid var(--color-line-in-white);
     padding: 0 1.6rem;
     font: 1.6rem Archivo;
+    color: '#FFFFFF';
+    option {
+        background: '#FFF';
+        color: '#FFFFFF';
+    }
 
     & + input {
         margin-top: 2.4rem;

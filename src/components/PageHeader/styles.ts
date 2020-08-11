@@ -8,6 +8,10 @@ export const Header = styled.header`
     @media (min-width: 700px) {
         height: 340px;
     }
+
+    input {
+        justify-content: end;
+    }
 `;
 
 export const HeaderTop = styled.div`
